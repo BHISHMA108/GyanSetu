@@ -1,0 +1,29 @@
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: hidden;
+    opacity: 0; /* Initially hidden */
+    animation: fadeInOut 3.5s ease-in-out forwards; /* Smooth fade-in and fade-out */
+}
+
+.video-container video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Animation for smooth fade-in and fade-out */
+@keyframes fadeInOut {
+    0% { opacity: 0; } /* Start hidden */
+    20% { opacity: 1; } /* Fade in */
+    90% { opacity: 1; } /* Stay visible */
+    100% { opacity: 0; } /* Fade out */
+}

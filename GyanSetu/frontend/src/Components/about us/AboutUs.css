@@ -1,0 +1,114 @@
+section {
+    padding: 50px 40px;
+    max-width: 1500px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    /* Remove any transform from the entire section so it doesn't shift images */
+  }
+  
+  /* Headings */
+h1 {
+    font-size: 4.0rem;
+    color: linear-gradient(180deg, #edc56e 50%, #03d4d4 100%);
+    margin-bottom: 20px;
+
+    font-weight: bold;
+  }
+
+  .aboutus-flex {
+    display: flex;
+    flex-direction: row; /* Ensure it is set to row */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px;
+  }
+
+  img{
+    height: 300px; /* Set a uniform height */
+    object-fit: contain; /* Ensures the full image is displayed without cropping */
+    width: auto; /* Maintain aspect ratio */
+    padding: -3px;
+    /* border : white 2px solid; */
+    border-radius: 2%;
+    margin: 20px; /* Centers the image */
+    margin-top: 45px;
+  }
+  /* Animations */
+  @keyframes aboutus-fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes aboutus-floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+h2{
+    margin-bottom: 50px;
+  }
+  /* Offer Container */
+  .aboutus-offer-container {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .aboutus-offer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: linear-gradient(180deg, #edc56e 50%, #03d4d4 100%);
+    padding: 50px;
+    margin: 10px;
+    background: linear-gradient(180deg, #310000 0%, #120012 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: aboutus-fadeInUp 1s ease-in-out, aboutus-floating 3s infinite ease-in-out;
+  }
+  
+  .aboutus-offer-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.5);
+  }
+  
+  /* Text Sizing/Alignment */
+  .aboutus-text-centered h2 {
+    text-align: center;
+    font-size: 65px;
+  }
+  
+  .aboutus-text-center {
+    font-size: 15px;
+  }
+  
+  .aboutus-text-3xl {
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  .aboutus-text-lg {
+    font-size: 17px;
+  }
+  
+  .aboutus-footer {
+    text-align: center;
+  }
+  

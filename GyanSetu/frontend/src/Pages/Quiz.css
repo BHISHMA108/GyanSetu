@@ -1,0 +1,95 @@
+/* Quiz Container */
+.quiz-container {
+
+    position: relative;
+    max-width: 700px;
+    transform:translate(1%, 5%);
+    transform: translate(50% , 10%);
+    padding: 50px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #ff9421;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Close Button Style */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s;
+  }
+  .close-button:hover {
+    color: #000;
+  }
+  
+  /* Progress Section - Center the circular progress bar */
+  .progress-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Question Section */
+  .question-section {
+    text-align: center;
+  }
+  
+  /* Option Buttons */
+  .option-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .option-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s, border-color 0.3s;
+  }
+  .option-button:hover {
+    background: #ff5900;
+    border-color: #aaa;
+  }
+  .option-button.correct {
+    background: #009405;
+    border-color: #06e70e;
+  }
+  .option-button.wrong {
+    background: #ff0202;
+    border-color: #f44336;
+  }
+  
+  /* Explanation Section */
+  .explanation-section {
+    margin-top: 20px;
+  }
+  
+  /* Navigation Buttons */
+  .next-button, .restart-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #07d80e;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .next-button:hover, .restart-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Score Section */
+  .score-section {
+    text-align: center;
+    font-size: 1.2em;
+  }

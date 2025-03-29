@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Berylium";
+  src: url("/fonts/Roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply globally */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+

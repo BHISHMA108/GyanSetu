@@ -1,0 +1,104 @@
+.calendar-container {
+  background: linear-gradient(135deg, #fff7e6 0%, #fcefdc 50%, #ffe9d0 100%);
+  border: 2px solid #c49b66; /* A subtle brownish border */
+  border-radius: 8px;
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-family: 'Merriweather', serif;
+
+}
+
+/* Navigation row: includes Prev/Next buttons + month/year label */
+.calendar-nav {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* The month label (e.g. "March 2025") */
+.monthFormat {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #6d6875;
+  border: 1px solid #6d6875;
+  border-radius: 4px;
+  background-color: #f9f4ef;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.monthFormat:hover {
+  background-color: #e2dcd6;
+}
+.calendar-nav button {
+  margin: 0 0.5rem;
+  color: #6d6875;
+  border-color: #6d6875;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-nav button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Calendar table: smooth, cohesive look */
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header cells (Sun, Mon, Tue, etc.) with a subtle gradient */
+.calendar-table th {
+  font-weight: bold;
+  background: linear-gradient(180deg, #d1e0e0 0%, #e8edee 100%);
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Body cells for days */
+.calendar-table td {
+  vertical-align: top;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  position: relative;
+  background-color: #fff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect on each day cell */
+.calendar-table td:hover {
+  background-color: #faf8ee;
+}
+
+/* If the cell is outside the current month (prev/next month days) */
+.outside-month {
+  color: #999 !important;
+  background-color: #f9f9f9 !important;
+}
+
+/* The day number (e.g. "14") in each cell */
+.calendar-day-number {
+  font-weight: bold;
+  color: #333;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 2px 4px;
+}
+
+/* Highlight the current date if it appears in the displayed month */
+.today-highlight {
+  background-color: rgba(255, 165, 0, 0.3);
+}
+
+/* Event text styling (e.g. "Holi", "Ramzan") */
+.calendar-event {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: #b80;
+}

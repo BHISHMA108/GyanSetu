@@ -1,0 +1,91 @@
+.religious-loginsignup {
+    background: url('/images/temple-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(255, 204, 128, 0.7);
+}
+
+.main-heading {
+    color: #a0522d;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+}
+
+.container {
+    background: #1f1a11;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.temple-icon {
+    color: #ff9933;
+    margin-bottom: 10px;
+}
+
+.input {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #d82222;
+}
+
+.input input {
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.icon {
+    color: #a0522d;
+}
+
+.submit-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.submit {
+    background-color: #ff9933;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit.gray {
+    background-color: #d3d3d3;
+    color: #333;
+}
+
+.underline {
+    width: 60px;
+    height: 3px;
+    background-color: #a0522d;
+    margin: 10px auto;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
